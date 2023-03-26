@@ -12,6 +12,11 @@ const args = require('minimist')(process.argv.slice(2), {
 const { playRPS, helpRPS, rulesRPS, playRPSLS, helpRPSLS, rulesRPSLS } = require("../lib/rpsls");
 
 // first check for help and rules flags
+// TODO: (1) Fully implement the help and rules messages in rpsls.js.
+// TODO: (2) Check the documentation to see if there's anything else that needs to be handled.
+// TODO: (3) Copy the rpsls fns in rpsls.js.
+// TODO: (4) Copy rps-cli.js into rpsls-cli.js.
+// * Should be done after that. All glory to God!
 if (args.h || args.help) {
     helpRPS();
     return;
