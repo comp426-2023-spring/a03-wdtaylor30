@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/comp426-2023-spring/a03-wdtaylor30/issues"
   },
-  "homepage": "https://github.com/comp426-2023-spring/a03-wdtaylor30#readme"
+  "homepage": "https://github.com/comp426-2023-spring/a03-wdtaylor30#readme",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
 }
