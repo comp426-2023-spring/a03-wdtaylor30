@@ -24,7 +24,7 @@ if (args.h || args.help) {
 
     // play rock if no argument is passed
     if (!playerMove) {
-        result = { "player": "rock"};
+        result = { "player": "rock" };
         console.log(JSON.stringify(result));
         return result;
     }

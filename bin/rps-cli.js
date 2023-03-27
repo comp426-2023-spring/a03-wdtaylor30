@@ -12,11 +12,6 @@ const args = require('minimist')(process.argv.slice(2), {
 const { playRPS, helpRPS, rulesRPS } = require("../lib/rpsls");
 
 // first check for help and rules flags
-// TODO: (1) Fully implement the help and rules messages in rpsls.js.
-// TODO: (2) Check the documentation to see if there's anything else that needs to be handled.
-// TODO: (3) Copy the rpsls fns in rpsls.js.
-// TODO: (4) Copy rps-cli.js into rpsls-cli.js.
-// * Should be done after that. All glory to God!
 if (args.h || args.help) {
     helpRPS();
     return;
@@ -29,7 +24,7 @@ if (args.h || args.help) {
 
     // play rock if no argument is passed
     if (!playerMove) {
-        result = { "player": "rock"};
+        result = { "player": "rock" };
         console.log(JSON.stringify(result));
         return result;
     }
@@ -43,6 +38,7 @@ if (args.h || args.help) {
     // if defined, log to console, otherwise exit silently
     if (!(typeof result == "undefined")) {
         console.log(JSON.stringify(result));
+        return result;
     }
     return;
 }
