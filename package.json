@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "bin": {
     "node-rps": "./bin/rps-cli.js",
-    "node-rpsls": "rpsls-cli.js"
+    "node-rpsls": "./bin/rpsls-cli.js"
   },
   "type": "module",
   "description": "Creating a cli Node.js module package example.",
