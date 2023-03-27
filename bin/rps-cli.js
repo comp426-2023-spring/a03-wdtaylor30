@@ -9,7 +9,7 @@ const args = require('minimist')(process.argv.slice(2), {
 });
 
 // import written functions from /lib/rpsls.js
-const { playRPS, helpRPS, rulesRPS, playRPSLS, helpRPSLS, rulesRPSLS } = require("../lib/rpsls");
+const { playRPS, helpRPS, rulesRPS } = require("../lib/rpsls");
 
 // first check for help and rules flags
 // TODO: (1) Fully implement the help and rules messages in rpsls.js.
@@ -39,5 +39,10 @@ if (args.h || args.help) {
 
     // play the game by randomizing cpu and return result
     result = playRPS(playerMove);
-    console.log(JSON.stringify(result));
+    
+    // if defined, log to console, otherwise exit silently
+    if (!(typeof result == "undefined")) {
+        console.log(JSON.stringify(result));
+    }
+    return;
 }
